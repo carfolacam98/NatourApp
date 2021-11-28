@@ -17,5 +17,10 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.natourapp.detail.DetailFragment"
-        android:label="DetailFragment" />
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="lugar"
+            app:argType="com.example.natourapp.model.LugarItem" />
+    </fragment>
 </navigation>
