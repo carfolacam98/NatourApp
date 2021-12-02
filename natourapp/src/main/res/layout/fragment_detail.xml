@@ -57,7 +57,7 @@
             android:paddingLeft="45dp"
             android:text="35 °C"
             android:textColor="#FFFFFF"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
 
         <TextView
@@ -66,7 +66,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:background="#006781"
-            android:text="Precipitacion "
+            android:text="Precipitacion 87%"
             android:textColor="#FBF8F8"
             android:textSize="15dp" />
 
@@ -76,7 +76,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:background="#006781"
-            android:text="Humedad"
+            android:text="Humedad 89%"
             android:textColor="#FFFFFF"
             android:textSize="15sp" />
 
@@ -86,7 +86,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:background="#006781"
-            android:text="Viento"
+            android:text="Viento 8km/h"
             android:textColor="#FFFFFF"
             android:textSize="15sp" />
 

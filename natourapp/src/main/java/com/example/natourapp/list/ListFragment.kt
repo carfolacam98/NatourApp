@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.natourapp.R
 import com.example.natourapp.databinding.FragmentListBinding
 import com.example.natourapp.model.Lugar
@@ -35,10 +37,22 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         lugaresList = loadMochFromJson()
         listLugaresAdapter = ListLugaresAdapter(lugaresList, onItemClicked = { onLugarClicked(it) })
-    }
-    private fun onLugarClicked(lugar: LugarItem) {
+
+        listBinding.lugaresRecycleView.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = listLugaresAdapter
+            setHasFixedSize(false)
+        }
 
     }
+
+    private fun onLugarClicked(lugar: LugarItem) {
+      findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(lugar) )
+        // findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment1() )
+    }
+
+
+
     private fun loadMochFromJson(): ArrayList<LugarItem> {
         var listaLugaresString: String =context?.assets?.open("lugaresTuristicos.json")?.bufferedReader().use { it!!.readText() }
         val gson = Gson()
