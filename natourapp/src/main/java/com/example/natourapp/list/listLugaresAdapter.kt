@@ -34,6 +34,14 @@ class ListLugaresAdapter(
     override fun getItemCount(): Int {
     return lugaresList.size
     }
+
+    fun appendItems(newItems: ArrayList<LugarItem>) {
+        lugaresList.clear()
+        lugaresList.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
+
     class ViewHolder(itemview: View):RecyclerView.ViewHolder(itemview){
         private var nameTextView:TextView= itemview.findViewById(R.id.name_text_view)
         private var descripcionTextView:TextView= itemview.findViewById(R.id.description_textView)

@@ -1,14 +1,13 @@
 package com.example.natourapp.list
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.natourapp.R
 import com.example.natourapp.databinding.FragmentListBinding
 import com.example.natourapp.model.Lugar
 import com.example.natourapp.model.LugarItem
@@ -18,8 +17,10 @@ import com.google.gson.Gson
 class ListFragment : Fragment() {
 
  private lateinit var listBinding: FragmentListBinding
+ private lateinit var listViewModel: ListViewModel
  private lateinit var listLugaresAdapter: ListLugaresAdapter
- private lateinit var lugaresList :ArrayList<LugarItem>
+ private var listLugares :ArrayList<LugarItem> = arrayListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -30,13 +31,18 @@ class ListFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         listBinding= FragmentListBinding.inflate(inflater,container,false)
+        listViewModel= ViewModelProvider(this)[ListViewModel::class.java]
         return  listBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        lugaresList = loadMochFromJson()
-        listLugaresAdapter = ListLugaresAdapter(lugaresList, onItemClicked = { onLugarClicked(it) })
+        listViewModel.loadMockLugarFromJson(context?.assets?.open("lugares.json"))
+        listViewModel.onLugaresLoaded.observe(viewLifecycleOwner, { result ->
+            onLugaresLoadedSubscribed(result)
+        })
+
+        listLugaresAdapter = ListLugaresAdapter(listLugares, onItemClicked = { onLugarClicked(it) })
 
         listBinding.lugaresRecycleView.apply {
             layoutManager = LinearLayoutManager(context)
@@ -44,6 +50,17 @@ class ListFragment : Fragment() {
             setHasFixedSize(false)
         }
 
+
+    }
+
+    private fun onLugaresLoadedSubscribed(result: ArrayList<LugarItem>?) {
+        result?.let { listLugares ->
+            listLugaresAdapter.appendItems(listLugares)
+
+
+            /*this.listLugares = listLugares
+            listLugaresAdapter.notifyDataSetChanged()*/
+        }
     }
 
     private fun onLugarClicked(lugar: LugarItem) {
