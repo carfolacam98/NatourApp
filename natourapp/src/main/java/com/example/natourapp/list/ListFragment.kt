@@ -47,9 +47,10 @@ class ListFragment : Fragment() {
     }
 
     private fun onLugarClicked(lugar: LugarItem) {
-      //findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(lugar) )
-         findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment1() )
+      findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(lugar) )
+      // findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment1() )
     }
+
 
 
 

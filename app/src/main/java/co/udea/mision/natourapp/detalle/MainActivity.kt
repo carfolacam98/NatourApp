@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import co.udea.mision.natourapp.databinding.ActivityMainBinding
-import co.udea.mision.natourapp.model.LugarItem
-import com.squareup.picasso.Picasso
+
+
 
 class MainActivity : AppCompatActivity() {
 

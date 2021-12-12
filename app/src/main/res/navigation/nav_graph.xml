@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLugares">
+
+    <fragment
+        android:id="@+id/fragmentLugares"
+        android:name="co.udea.mision.natourapp.FragmentHome"
+        android:label="fragment_lugares"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentLugares_to_registerActivity3"
+            app:destination="@id/registerActivity" />
+        <action
+            android:id="@+id/action_fragmentLugares_to_listLugarActivity3"
+            app:destination="@id/listLugarActivity" />
+        <action
+            android:id="@+id/action_fragmentLugares_to_fragmentInicio2"
+            app:destination="@id/fragmentInicio2" />
+    </fragment>
+    <activity
+        android:id="@+id/listLugarActivity"
+        android:name="co.udea.mision.natourapp.list.ListLugarActivity"
+        android:label="activity_list_lugares"
+        tools:layout="@layout/activity_list_lugares" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="co.udea.mision.natourapp.registro.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <fragment
+        android:id="@+id/fragmentInicio2"
+        android:name="co.udea.mision.natourapp.FragmentInicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_fragmentInicio2_to_listLugarActivity"
+            app:destination="@id/listLugarActivity" />
+        <action
+            android:id="@+id/action_fragmentInicio2_to_registerActivity"
+            app:destination="@id/registerActivity" />
+        <action
+            android:id="@+id/action_fragmentInicio2_to_fragmentLugares"
+            app:destination="@id/fragmentLugares" />
+    </fragment>
+</navigation>

@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
-        <action
-            android:id="@+id/action_listFragment_to_settingsFragment1"
-            app:destination="@id/settingsFragment1" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -25,6 +22,12 @@
         <argument
             android:name="lugar"
             app:argType="com.example.natourapp.model.LugarItem" />
+        <action
+            android:id="@+id/action_detailFragment_to_settingsFragment1"
+            app:destination="@id/settingsFragment1" />
+        <action
+            android:id="@+id/action_detailFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment1"
