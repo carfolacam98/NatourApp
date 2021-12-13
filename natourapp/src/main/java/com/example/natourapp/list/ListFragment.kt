@@ -37,7 +37,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        listViewModel.loadMockLugarFromJson(context?.assets?.open("lugares.json"))
+        listViewModel.loadMockLugarFromJson(context?.assets?.open("lugaresTuristicos.json"))
         listViewModel.onLugaresLoaded.observe(viewLifecycleOwner, { result ->
             onLugaresLoadedSubscribed(result)
         })

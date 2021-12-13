@@ -2,36 +2,45 @@
     "nombre" : "Cascada fin del mundo",
     "descripcion" : "La Cascada fin del Mundo se encuentra en medio de la selva amazónica, a  unos pocos kilómetros del municipio de Mocoa, y totalmente rodeada de aire puro y de un paisaje virgen cargado de cientos de especies de lora y auna.",
     "caliicacion" : 4.8,
-    "urlImage" :"https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/cascada_xhmgvm.jpg"
-
+    "urlImage" :"https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/cascada_xhmgvm.jpg",
+    "latitud" :"1.103569",
+    "longitud" :"-76.624655"
 },
+
 {
     "nombre" : "Centro Experimental Amazónico (CEA)",
-                "descripcion" : "El Centro Experimental Amazónico, es un observatorio ambiental que promueve el conocimiento cientíico y tradicional en aras de mejorar la calidad de vida de los habitantes de la región y de los turistas que nos visitan.",
-                "caliicacion" : 3.7,
-                "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/etnoturistico_kz0flb.jpg"
-
+    "descripcion" : "El Centro Experimental Amazónico, es un observatorio ambiental que promueve el conocimiento cientíico y tradicional en aras de mejorar la calidad de vida de los habitantes de la región y de los turistas que nos visitan.",
+    "caliicacion" : 3.7,
+    "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/etnoturistico_kz0flb.jpg",
+    "latitud" :"1.082536",
+    "longitud" :"-76.632192"
 },
+
 {
     "nombre" : "Centro Etnoturístico Inga MAITUS WASI ",
-                "descripcion" : " Es un centro de sanación donde se preserva el arte, la cultura y en especial la medicina tradicional en especial del pueblo inga, un lugar sagrado donde se busca la puriicación del cuerpo y espíritu humano para así preservar la naturaleza, la salud, la unidad amiliar y en especial la paz y tranquilidad de quienes nos visitan.",
-                "caliicacion" : 4.1,
-                "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/amazonico_us7zvt.jpg"
-
+    "descripcion" : " Es un centro de sanación donde se preserva el arte, la cultura y en especial la medicina tradicional en especial del pueblo inga, un lugar sagrado donde se busca la puriicación del cuerpo y espíritu humano para así preservar la naturaleza, la salud, la unidad amiliar y en especial la paz y tranquilidad de quienes nos visitan.",
+    "caliicacion" : 4.1,
+    "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/amazonico_us7zvt.jpg",
+    "latitud" :"1.2920226",
+    "longitud" :"-76.583472"
 },
+
 {
     "nombre" : "Mariposario paway",
-                "descripcion" : "En el Mariposario Paway podemos conocer el antástico mundo de las mariposas en su área de vuelo como el proceso que llevan en el laboratorio con la inalidad de poder tener un conocimiento más amplio.",
-                "caliicacion" : 3.0,
-                "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/mariposario_tlrhqr.jpg"
-
+    "descripcion" : "En el Mariposario Paway podemos conocer el antástico mundo de las mariposas en su área de vuelo como el proceso que llevan en el laboratorio con la inalidad de poder tener un conocimiento más amplio.",
+    "caliicacion" : 3.0,
+    "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/mariposario_tlrhqr.jpg",
+    "latitud" :"1.087828",
+    "longitud" :"-76.633959"
 },
+
 {
     "nombre" : "Cavernas de Licamancha",
-                "descripcion" : " Durante miles de años, el contacto constante de las rocas con cursos subterráneos de agua las erosionó y creó cavidades internas en ellas, con diversas ormas ideales para la práctica de la espeleología. Las cuevas están al norte de Mocoa, en donde hay una corriente de agua que desemboca en el río Caquetá.",
-                "caliicacion" : 4.4,
-                "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/licamancha_z6w73q.jpg"
-
+    "descripcion" : " Durante miles de años, el contacto constante de las rocas con cursos subterráneos de agua las erosionó y creó cavidades internas en ellas, con diversas ormas ideales para la práctica de la espeleología. Las cuevas están al norte de Mocoa, en donde hay una corriente de agua que desemboca en el río Caquetá.",
+    "caliicacion" : 4.4,
+    "urlImage" : "https://res.cloudinary.com/dsrxzmwzx/image/upload/v1637378004/licamancha_z6w73q.jpg",
+    "latitud" :"1.103569",
+    "longitud" :"-76.624655"
 }
 
 ]

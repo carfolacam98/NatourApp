@@ -12,5 +12,9 @@ data class LugarItem(
     @SerializedName("nombre")
     val nombre: String,
     @SerializedName("urlImage")
-    val urlImage: String
+    val urlImage: String,
+    @SerializedName("latitud")
+    val latitud: String,
+    @SerializedName("longitud")
+    val longitud: String
 ): Serializable

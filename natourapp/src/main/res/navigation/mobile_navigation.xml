@@ -28,9 +28,17 @@
         <action
             android:id="@+id/action_detailFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment1"
         android:name="com.example.natourapp.preference.SettingsFragment1"
         android:label="SettingsFragment1" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.natourapp.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
