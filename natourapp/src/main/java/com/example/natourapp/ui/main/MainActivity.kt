@@ -1,4 +1,4 @@
-package com.example.natourapp.main
+package com.example.natourapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

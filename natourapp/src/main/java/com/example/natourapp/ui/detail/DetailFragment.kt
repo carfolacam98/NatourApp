@@ -1,4 +1,4 @@
-package com.example.natourapp.detail
+package com.example.natourapp.ui.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,12 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.natourapp.R
 import com.example.natourapp.databinding.FragmentDetailBinding
-import com.example.natourapp.list.ListViewModel
 
 
 class DetailFragment : Fragment() {

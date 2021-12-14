@@ -1,4 +1,4 @@
-package com.example.natourapp.maps
+package com.example.natourapp.ui.maps
 
 import androidx.fragment.app.Fragment
 

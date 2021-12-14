@@ -1,4 +1,4 @@
-package com.example.natourapp.list
+package com.example.natourapp.ui.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -37,7 +37,10 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        listViewModel.loadMockLugarFromJson(context?.assets?.open("lugaresTuristicos.json"))
+        //listViewModel.loadMockLugarFromJson(context?.assets?.open("lugaresTuristicos.json"))
+
+        listViewModel.getLugaresFromServer()
+
         listViewModel.onLugaresLoaded.observe(viewLifecycleOwner, { result ->
             onLugaresLoadedSubscribed(result)
         })
@@ -71,12 +74,12 @@ class ListFragment : Fragment() {
 
 
 
-    private fun loadMochFromJson(): ArrayList<LugarItem> {
+    /*private fun loadMochFromJson(): ArrayList<LugarItem> {
         var listaLugaresString: String =context?.assets?.open("lugaresTuristicos.json")?.bufferedReader().use { it!!.readText() }
         val gson = Gson()
         val data = gson.fromJson(listaLugaresString, Lugar::class.java)
         return data
-    }
+    }*/
 
 
 }

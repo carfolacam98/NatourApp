@@ -1,4 +1,4 @@
-package com.example.natourapp.preference
+package com.example.natourapp.ui.preference
 
 import android.os.Bundle
 import androidx.preference.PreferenceFragmentCompat

@@ -1,4 +1,4 @@
-package com.example.natourapp.detail
+package com.example.natourapp.ui.detail
 
 import androidx.lifecycle.ViewModel
 

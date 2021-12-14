@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.natourapp.list.ListFragment"
+        android:name="com.example.natourapp.ui.list.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.natourapp.detail.DetailFragment"
+        android:name="com.example.natourapp.ui.detail.DetailFragment"
         android:label="DetailFragment"
         tools:layout="@layout/fragment_detail">
         <argument
@@ -34,11 +34,11 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment1"
-        android:name="com.example.natourapp.preference.SettingsFragment1"
+        android:name="com.example.natourapp.ui.preference.SettingsFragment1"
         android:label="SettingsFragment1" />
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="com.example.natourapp.maps.MapsFragment"
+        android:name="com.example.natourapp.ui.maps.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
 </navigation>

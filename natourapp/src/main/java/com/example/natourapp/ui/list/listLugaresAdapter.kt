@@ -1,4 +1,4 @@
-package com.example.natourapp.list
+package com.example.natourapp.ui.list
 
 import android.view.LayoutInflater
 import android.view.View
