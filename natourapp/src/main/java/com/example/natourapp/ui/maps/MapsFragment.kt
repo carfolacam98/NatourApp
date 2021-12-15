@@ -28,7 +28,7 @@ class MapsFragment : Fragment() {
          * install it inside the SupportMapFragment. This method will only be triggered once the
          * user has installed Google Play services and returned to the app.
          */
-        val args: DetailFragmentArgs by navArgs()
+        /*val args: DetailFragmentArgs by navArgs()
         val lugar = args.lugar
 
         val posiLugar = LatLng(lugar.latitud, lugar.longitud)  // Revisar cómo mandar el objeto
@@ -38,17 +38,17 @@ class MapsFragment : Fragment() {
                 .title(lugar.nombre)
                 .snippet("Calificación: " + lugar.caliicacion) // Se puede cambiar por la puntuación, pero depende del objeto
         )
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posiLugar, 16F))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posiLugar, 12F))*/
 
 
-        /*val cascadaFinMundo = LatLng(1.1035694, -76.6246555)  // Revisar cómo mandar el objeto
+        val cascadaFinMundo = LatLng(1.1035694, -76.6246555)  // Revisar cómo mandar el objeto
         googleMap.addMarker(
             MarkerOptions()
                 .position(cascadaFinMundo)
                 .title("Cascada Fin del Mundo")
                 .snippet("Mocoa") // Se puede cambiar por la puntuación, pero depende del objeto
         )
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cascadaFinMundo, 16F))*/
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cascadaFinMundo, 12F))
     }
 
     override fun onCreateView(
