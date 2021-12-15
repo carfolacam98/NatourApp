@@ -39,6 +39,7 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         //listViewModel.loadMockLugarFromJson(context?.assets?.open("lugaresTuristicos.json"))
 
+        // https://my-json-server.typicode.com/
         listViewModel.getLugaresFromServer()
 
         listViewModel.onLugaresLoaded.observe(viewLifecycleOwner, { result ->
@@ -74,12 +75,12 @@ class ListFragment : Fragment() {
 
 
 
-    /*private fun loadMochFromJson(): ArrayList<LugarItem> {
+    private fun loadMochFromJson(): ArrayList<LugarItem> {
         var listaLugaresString: String =context?.assets?.open("lugaresTuristicos.json")?.bufferedReader().use { it!!.readText() }
         val gson = Gson()
         val data = gson.fromJson(listaLugaresString, Lugar::class.java)
         return data
-    }*/
+    }
 
 
 }
