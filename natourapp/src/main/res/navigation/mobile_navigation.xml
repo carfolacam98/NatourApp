@@ -40,7 +40,12 @@
         android:id="@+id/mapsFragment"
         android:name="com.example.natourapp.ui.maps.MapsFragment"
         android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/fragment_maps" >
+        <argument android:name="lugar"
+            app:argType="com.example.natourapp.model.LugarItem"/>
+    </fragment>
+
+
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.natourapp.ui.splash.SplashFragment"

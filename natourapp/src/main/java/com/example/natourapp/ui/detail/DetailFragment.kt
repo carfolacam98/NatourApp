@@ -62,7 +62,9 @@ class DetailFragment : Fragment() {
             com.squareup.picasso.Picasso.get().load(lugar.urlImage).into(imageView)
 
             imageMaps.setOnClickListener {
-                findNavController().navigate(DetailFragmentDirections.actionDetailFragmentToMapsFragment())
+                findNavController().navigate(DetailFragmentDirections.actionDetailFragmentToMapsFragment(
+                    lugar
+                ))
             }
         }
 
